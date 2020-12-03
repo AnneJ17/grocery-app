@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+   <include layout="@layout/app_bar"/>
+
+    <TextView
+        android:id="@+id/text_view_title"
+        style="@style/AppStyle"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="@string/text_view_address"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/edit_text_type"
+        style="@style/AppStyle"
+        android:background="@drawable/border"
+        android:hint="@string/edit_text_address_type"
+        android:paddingLeft="12dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_text_house_no"
+            style="@style/AppStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:hint="@string/edit_text_house_no"
+            android:padding="7dp" />
+
+        <EditText
+            android:id="@+id/edit_text_street"
+            style="@style/AppStyle"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/edit_text_house_no"
+            android:background="@drawable/border"
+            android:hint="@string/edit_text_address_street"
+            android:padding="7dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_text_city"
+        style="@style/AppStyle"
+        android:background="@drawable/border"
+        android:hint="@string/edit_text_address_city"
+        android:paddingLeft="12dp" />
+
+
+    <EditText
+        android:id="@+id/edit_text_pincode"
+        style="@style/AppStyle"
+        android:background="@drawable/border"
+        android:hint="@string/edit_text_pincode"
+        android:inputType="number"
+        android:paddingLeft="12dp" />
+
+    <Button
+        android:id="@+id/button_save"
+        style="@style/AppStyle"
+        android:background="@drawable/border"
+        android:text="@string/button_save_address"
+        android:layout_marginTop="42dp"/>
+
+</LinearLayout>

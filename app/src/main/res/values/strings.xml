@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Orangee</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_add_to_cart">Add to Cart</string>
+
+    <!--    Login Activity-->
+    <string name="edit_text_username">Username</string>
+    <string name="edit_text_password">Password</string>
+    <string name="text_view_forgot">Forgot your login details? Get help signing in</string>
+    <string name="button_login">LOG IN</string>
+    <string name="text_view_or">OR</string>
+    <string name="text_view_login">Log in with Facebook</string>
+    <string name="text_view_signup">Don\'t have an account? Sign up</string>
+
+    <!--    RegisterActivity-->
+    <string name="edit_text_name">Name</string>
+    <string name="edit_text_email">Email</string>
+    <string name="text_View_registered">Already Registered? Click Here</string>
+    <string name="button_register">REGISTER</string>
+
+    <!--    Purchase-->
+    <string name="sub_total">Sub Total</string>
+    <string name="discount">Discount</string>
+    <string name="total">Total</string>
+    <string name="button_checkout">CHECKOUT</string>
+
+    <!--    Nav bar-->
+    <string name="text_view_hello">Hello,</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_list">Order History</string>
+
+    <!--    Add Address-->
+    <string name="text_view_address">Add Address</string>
+    <string name="edit_text_address_street">Street Name</string>
+    <string name="edit_text_house_no">House Number</string>
+    <string name="edit_text_address_city">City / Town</string>
+    <string name="edit_text_pincode">Pincode</string>
+    <string name="button_save_address">SAVE ADDRESS</string>
+
+    <!--    Choose Address-->
+    <string name="text_view_delivery">Please choose your delivery address here</string>
+    <string name="text_view_delivery_add">+ Add New Delivery Address</string>
+    <string name="button_proceed_checkout">PROCEED TO CHECKOUT</string>
+    <string name="edit_text_address_type">Address Type</string>
+
+    <!--    Empty Cart-->
+    <string name="text_view_cart_empty">Your Cart is Empty</string>
+    <string name="text_view_cart_empty_message">Looks like you haven\'t made your choice yet!</string>
+    <string name="button_back_to_menu">BACK TO MENU</string>
+
+    <!--    Payment Confirmation-->
+    <string name="text_view_ship">Shipping Address</string>
+    <string name="text_view_order">Review Order</string>
+    <string name="button_confirm">CONFIRM</string>
+    <string name="text_view_delivery_charges">Delivery Charges</string>
+
+    <!--    Confirmation Page-->
+    <string name="text_view_order_placed">Your order has been placed</string>
+    <string name="text_view_order_placed_message">Thank you for purchasing our product!</string>
+    <string name="text_view_order_placed_questions">Any questions or concerns? Please don\'t hesitate to ask us, we\'re always here for you!</string>
+    <string name="text_view_receipt">View receipt</string>
+
+    <!--    Order Summary (Receipt)-->
+    <string name="text_view_date">Date</string>
+    <string name="text_view_status">Order Status</string>
+    <string name="text_view_num">Order No</string>
+    <string name="text_view_count">Item Count</string>
+    <string name="text_view_amount">Order Amount</string>
+    <string name="text_view_time">Time</string>
+    <string name="text_view_paid">"PAID: "</string>
+    <string name="text_view_name">First Name</string>
+    <string name="text_view_email">E-mail</string>
+    <string name="text_view_mobile">Phone Number</string>
+    <string name="button_save">SAVE</string>
+    <string name="text_view_password">Password</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_wish_list">Wish List</string>
+
+
+</resources>
