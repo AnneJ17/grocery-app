@@ -20,13 +20,14 @@ Orangee is an android app built for grocery shopping.
 
 <h2 id="development">Development</h2>
 
-This app is built with Android Studio. Once you have the [Android Studio installed](https://developer.android.com/studio), start by cloning the repo:
+This app is built with Android Studio. Once you have the [Android Studio](https://developer.android.com/studio) installed, start by cloning the repo:
 
 ```
 $ git clone https://github.com/AnneJ17/grocery-app.git
 ```
 
-From there you can now run Orangee on the emulator you wish. However, this app was tested and run on on a emulator Pixel 2 running API 29 (Android 10+ / R) 
+From there you can now run Orangee on the emulator you wish. However, this app was tested and run on on a emulator Pixel 2 running API 29 (Android 10+ / R). 
+
 Below is the command you can use if you're using terminal to run the emulator.
 ```
 $ cd /Users/<user-name>/Library/Android/sdk/emulator/ && ./emulator -avd Pixel_2_API_29
