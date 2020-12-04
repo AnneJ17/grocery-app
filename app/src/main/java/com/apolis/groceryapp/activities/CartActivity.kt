@@ -1,26 +1,29 @@
 package com.apolis.groceryapp.activities
 
 import SessionManager
+import android.R.attr
+import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.apolis.groceryapp.R
-import com.apolis.groceryapp.helpers.SwipeToDelete
 import com.apolis.groceryapp.adapters.CartAdapter
 import com.apolis.groceryapp.database.DBHelper
+import com.apolis.groceryapp.helpers.SwipeToDelete
 import com.apolis.groceryapp.models.Product
 import kotlinx.android.synthetic.main.activity_cart.*
 import kotlinx.android.synthetic.main.app_bar.*
 import kotlinx.android.synthetic.main.cart_empty.*
 
+
 class CartActivity : AppCompatActivity(), CartAdapter.OnAdapterListener {
 
+    private val REQUEST_CODE = 1
     var cartItems: ArrayList<Product> = ArrayList()
     lateinit var dbHelper: DBHelper
     lateinit var cartAdapter: CartAdapter
@@ -56,7 +59,8 @@ class CartActivity : AppCompatActivity(), CartAdapter.OnAdapterListener {
                 startActivity(Intent(this, AddressListActivity::class.java))
             }
             else {
-                startActivity(Intent(this, LoginActivity::class.java))
+                var intent = Intent(this, LoginActivity::class.java)
+                startActivityForResult(intent, REQUEST_CODE)
             }
         }
 
@@ -64,6 +68,14 @@ class CartActivity : AppCompatActivity(), CartAdapter.OnAdapterListener {
         isCartEmpty()
     }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode === REQUEST_CODE) {
+            if (resultCode === Activity.RESULT_OK) {
+
+            }
+        }
+    }
     private fun onSwipeDelete() {
         // swipe to delete callback
         val item = object : SwipeToDelete(this, 0, ItemTouchHelper.RIGHT) {

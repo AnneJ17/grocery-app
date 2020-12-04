@@ -11,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import androidx.core.view.MenuItemCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.android.volley.Request
@@ -113,14 +114,14 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
-        var menuItem = menu?.findItem(R.id.cart_badge)
+        var menuItem = menu?.findItem(R.id.menu_cart)
+        MenuItemCompat.setActionView(menuItem, R.layout.cart_menu_item_action_layout)
         var actionView = menuItem?.actionView
         textViewItemCount = actionView?.findViewById(R.id.cart_badge)
 
         setUpBadge()
 
         actionView?.setOnClickListener {
-            Toast.makeText(this, "Clicked", Toast.LENGTH_SHORT).show()
             onOptionsItemSelected(menuItem!!)
         }
         return true
@@ -151,6 +152,7 @@ class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     private fun setUpBadge() {
         var dbHelper = DBHelper(this)
+        textViewItemCount?.text = dbHelper.itemsInCart().toString()
         if(dbHelper.itemsInCart() != null) {
             if (dbHelper.itemsInCart() == 0) {
                 if(textViewItemCount?.visibility == View.VISIBLE) {

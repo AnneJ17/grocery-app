@@ -1,6 +1,7 @@
 package com.apolis.groceryapp.activities
 
 import SessionManager
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -56,6 +57,7 @@ class LoginActivity : AppCompatActivity() {
                     var userId = loginResponse.user._id
                     var user = User(userId, name, email, password)
                     sessionManager.register(user)
+                    setResult(Activity.RESULT_OK)
                     startActivity(Intent(this, HomeActivity::class.java))
                 },
                 Response.ErrorListener {
