@@ -1,6 +1,6 @@
 # Orangee
 
-Orangee is an android app built for grocery shopping. The main UI elements I used are RecyclerView,TabLayout, ViewPager, and Navigation drawer. For networking, I made use of an http library called Volley and used sqlite database for storing some of the data.
+Orangee is an android app built for grocery shopping. The main UI elements I used are RecyclerView, TabLayout, ViewPager, and Navigation drawer. For networking, I made use of an http library called Volley and used sqlite database for storing some of the data.
 
 <h2 id="screenshots">Screenshots</h2>
 
