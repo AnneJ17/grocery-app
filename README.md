@@ -26,7 +26,7 @@ This app is built with Android Studio. Once you have the [Android Studio](https:
 $ git clone https://github.com/AnneJ17/grocery-app.git
 ```
 
-From there you can now run Orangee on the emulator you wish. However, this app was tested and run on on a emulator Pixel 2 running API 29 (Android 10+ / R). 
+From there you can now run Orangee on the emulator you wish. However, this app was tested and run on on an emulator (Pixel 2) running API 29 (Android 10+ / R). 
 
 Below is the command you can use if you're using terminal to run the emulator.
 ```
